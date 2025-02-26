@@ -3,10 +3,12 @@ import Home from "./pages/Home";
 import SignIn from "./pages/signIn";
 import SignUp from "./pages/SignUp";
 import About from "./pages/about";
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
